@@ -1,0 +1,31 @@
+doctype html
+html(lang="zh-cn")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=Edge")
+    meta(name="viewport",content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no")
+    meta(name="format-detection",content="telephone=no")
+    meta(name="format-detection",content="email=no")
+    title 毛怡伟的首页
+    link(rel="stylesheet", href="./css/main.css") 
+  body
+    include ./components/loading.pug
+    .ui-container
+      .ui-mobile-nav-trigger-container
+        i.iconfont.ui-mobile-nav-trigger &#xe60a;
+        span ~o( =∩ω∩= )m Resume
+      .ui-nav-container
+        include ./components/nav.pug
+      .ui-content-container
+        //- .ui-content-title 
+        //-   h1 基本信息
+        .ui-content-article
+          .ui-content-story-outter
+            include ./components/basicinfo.pug
+            include ./components/experience.pug
+            include ./components/skill.pug
+            include ./components/contact.pug
+        .ui-content-image
+          img(src="./assets/kawai.png")
+          .ui-content-image-left
+    script(src="./js/main.js")

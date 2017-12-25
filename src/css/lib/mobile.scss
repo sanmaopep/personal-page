@@ -1,0 +1,64 @@
+.ui-mobile-nav-trigger-container {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    $triggerHeight: 50px;
+    .ui-nav-container {
+        transition: all .5s;
+        visibility: hidden;
+        width: 0px;
+        position: absolute;
+        top: $triggerHeight;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+    }
+    .ui-nav-container.ui-mobile-show {
+        visibility: visible;
+        width: 80%;
+    }
+    .ui-content-container {
+        .ui-content-article {
+            padding-left: 0;
+        }
+        .ui-content-image {
+            display: none;
+        }
+    } // 显示
+    .ui-content-story-outter {
+        padding: 30px 0 0 0;
+        .ui-content-story {
+            margin-left: 10px;
+        }
+    }
+    .ui-mobile-nav-trigger-container {
+        position: absolute;
+        display: block;
+        box-sizing: border-box;
+        top: 0px;
+        left: 0px;
+        padding-left: 17px;
+        height: $triggerHeight;
+        line-height: $triggerHeight;
+        width: 100%;
+        color: #fff;
+        background: $mainColor;
+        font-size: 20px;
+        display: flex;
+        .ui-mobile-nav-trigger {
+            cursor: pointer;
+        }
+        span {
+            margin-left: 10px;
+            font-size: 19px;
+        }
+    }
+}
+
+// 打印适配
+@media print {
+    .ui-content-image {
+        display: none!important;
+    }
+}
