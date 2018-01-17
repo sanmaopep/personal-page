@@ -4,6 +4,7 @@
   "description": "design my resume",
   "main": "index.js",
   "scripts": {
+    "start":"npm run dev",
     "dev": "cross-env NODE_ENV=development gulp",
     "build": "cross-env NODE_ENV=production gulp prod",
     "pdf": "gulp pdf",
