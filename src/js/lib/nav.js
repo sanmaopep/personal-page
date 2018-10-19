@@ -178,7 +178,8 @@ storyState.prototype._mouseWheel = function (event) {
         let offsetHeight = this.storyOutterDOM.offsetHeight;
         let scrollHeight = this.storyOutterDOM.scrollHeight;
 
-        if (scrollTop + offsetHeight >= scrollHeight) {
+
+        if (scrollTop + offsetHeight + 1 >= scrollHeight) {
             this._downStory();
         }
 
