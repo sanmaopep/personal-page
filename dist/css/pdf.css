@@ -554,7 +554,8 @@ footer {
   .ui-pdf-content .ui-basic-info h1 {
     font-family: "hyry";
     color: #01579B;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-left: -7px; }
   .ui-pdf-content .ui-basic-info p {
     font-family: "hyry"; }
     .ui-pdf-content .ui-basic-info p span {
@@ -567,12 +568,12 @@ footer {
       color: #00A1D6;
       line-height: 30px;
       border-bottom: 1px solid #00A1D6;
-      margin: 0 0 15px -5px;
+      margin: 0 0 25px -5px;
       font-family: "hyry"; }
     .ui-pdf-content .ui-content-story h2 {
       font-size: 19px;
       color: #01579B;
-      margin: 15px 0 15px 5px;
+      margin: 15px 0 15px -5px;
       font-family: "hyry"; }
     .ui-pdf-content .ui-content-story h3 {
       border-left: 2px solid #01579B;
